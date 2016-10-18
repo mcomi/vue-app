@@ -1,0 +1,19 @@
+{
+  "name": "vue-app",
+  "version": "1.0.0",
+  "description": "My first Vue.js app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcomi/vue-app.git"
+  },
+  "author": "Manuel Comi <mcomi@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcomi/vue-app/issues"
+  },
+  "homepage": "https://github.com/mcomi/vue-app#readme"
+}
