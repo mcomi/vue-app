@@ -1,10 +1,9 @@
 new Vue({
 
-    // We want to target the div with an id of 'events'
+    // Este es el target id 'events' en el template
     el: '#events',
 
-    // Here we can register any values or collections that hold data
-    // for the application
+    // Aqui se declaran los datos de la aplicacion
     data: {
         event: {
             name: '',
@@ -14,17 +13,16 @@ new Vue({
         events: []
     },
 
-    // Anything within the ready function will run when the application loads
-    ready: function () {
-        // When the application loads, we want to call the method that initializes
-        // some data
+    // Cuando la aplicacion carga aqui se puede declarar lo que queremos realizar 
+    created: function () {
+        // Inicializo con algunos datos
         this.fetchEvents();
     },
 
-    // Methods we want to use in our application are registered here
+    // Se declaran nuestras funciones que queremos ocupar
     methods: {
 
-        // We dedicate a method to retrieving and setting some data
+        // Este metodo carga algunos datos al inicializar la app
         fetchEvents: function () {
             var events = [{
                 id: 1,
@@ -44,7 +42,7 @@ new Vue({
             }];
             // $set is a convenience method provided by Vue that is similar to pushing
             // data onto an array
-            this.$set('events', events);
+            this.events = events;
         },
 
         // Adds an event to the existing events array
